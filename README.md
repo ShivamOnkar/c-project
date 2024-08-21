@@ -1,7 +1,6 @@
 # c-project
 #include <stdio.h>
-#include <stdlib.h>  // For system("cls")
-
+#include <stdlib.h> 
 void printBoard();
 int checkWin();
 void clearScreen();
