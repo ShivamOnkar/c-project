@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdlib.h>  // For system("cls")
+#include<stdlib.h> 
 
 void printBoard();
 int checkWin();
@@ -38,7 +38,7 @@ int main() {
                 return 0;
             }
 
-            player++;  // Toggle player
+            player++;  
         } else {
             printf("The cell is already occupied. Choose another one.\n");
         }
@@ -64,12 +64,11 @@ void printBoard() {
 }
 
 void clearScreen() {
-    // Clear the screen using the system command for Windows. Modify if using a different OS.
-    system("cls");  // Use "clear" on Unix-based systems
+    system("cls"); 
 }
 
 int checkWin() {
-    // Check for win conditions
+
     if (board[1] == board[2] && board[2] == board[3]) return 1;
     if (board[4] == board[5] && board[5] == board[6]) return 1;
     if (board[7] == board[8] && board[8] == board[9]) return 1;
@@ -79,12 +78,12 @@ int checkWin() {
     if (board[1] == board[5] && board[5] == board[9]) return 1;
     if (board[3] == board[5] && board[5] == board[7]) return 1;
 
-    // Check for draw
+   
     for (int i = 1; i <= 9; i++) {
         if (board[i] != 'X' && board[i] != 'O') {
-            return -1;  // The game is still ongoing
+            return -1; 
         }
     }
 
-    return 0;  // The game is a draw
+    return 0;  
 }
