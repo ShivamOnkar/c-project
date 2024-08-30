@@ -1,5 +1,6 @@
 # C-project
 <br>
 This is my git repository
-It is a Tic Tac Toe game make by using C language.
+
+It is a Tic Tac Toe game made by using C language.
  
