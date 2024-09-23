@@ -1,4 +1,4 @@
-# C-project
+# C-Project
 <br>
 This is my git repository
 
